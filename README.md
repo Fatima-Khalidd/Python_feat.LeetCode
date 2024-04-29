@@ -1,1 +1,1 @@
-Each files have methods for performing different in python. 
+Each file has methods for performing different in python. 
