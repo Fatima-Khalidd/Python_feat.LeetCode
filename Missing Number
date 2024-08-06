@@ -1,0 +1,5 @@
+length = len(nums)
+exp_total=(length*(length+1))//2
+nums_sum=sum(nums)
+#print(nums_sum)
+return exp_total -nums_sum
