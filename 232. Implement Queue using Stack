@@ -1,0 +1,14 @@
+class MyQueue:
+
+    def __init__(self):
+        self.firstStack = []
+        self.finalStack = []
+
+    def enqueue(self, x):
+        self.firstStack.append(x)
+
+    def dequeue(self):
+        if not self.finalStack:
+            while self.firstStack:
+                self.finalStack.append(self.firstStack.pop())
+        return self.finalStack.pop()
